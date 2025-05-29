@@ -5,10 +5,10 @@
 
 class HockeyPlayer {
 private:
-    std::string name;      
-    int age;               
-    std::string position;  
-    int goalCount;         
+    std::string name_;      
+    int age_;               
+    std::string position_;  
+    int goalCount_;         
 
 public:
     

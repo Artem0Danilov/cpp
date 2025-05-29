@@ -5,36 +5,36 @@
 
 HockeyPlayer::HockeyPlayer(const std::string& playerName, int playerAge,
     const std::string& playerPosition, int goals)
-    : name(playerName), age(playerAge),
-    position(playerPosition), goalCount(goals) {
+    : name_(playerName), age_(playerAge),
+    position_(playerPosition), goalCount_(goals) {
 }
 
 
 void HockeyPlayer::scoreGoal() {               
-    goalCount++;
-    std::cout << name << " забил гол! Всего голов: " << goalCount << "\n";
+    goalCount_++;
+    std::cout << name_ << " забил гол! Всего голов: " << goalCount_ << "\n";
 }
 
 
 void HockeyPlayer::printInfo() const {
     std::cout << "\n--- Информация об игроке ---\n"
-        << "Имя: " << name << "\n"
-        << "Возраст: " << age << "\n"
-        << "Позиция: " << position << "\n"
-        << "Голы: " << goalCount << "\n";
+        << "Имя: " << name_ << "\n"
+        << "Возраст: " << age_ << "\n"
+        << "Позиция: " << position_ << "\n"
+        << "Голы: " << goalCount_ << "\n";
 }
 
 
 void HockeyPlayer::changePosition(const std::string& newPosition) {                
-    position = newPosition;
-    std::cout << name << " теперь играет на позиции: " << position << "\n";
+    position_ = newPosition;
+    std::cout << name_ << " теперь играет на позиции: " << position_ << "\n";
 }
 
 
 std::string HockeyPlayer::getName() const {
-    return name;
+    return name_;
 }
 
 int HockeyPlayer::getGoals() const {
-    return goalCount;
+    return goalCount_;
 }
