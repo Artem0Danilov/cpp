@@ -1,5 +1,6 @@
-#include "HockeyPlayer.h"
 #include <iostream>
+#include "HockeyPlayer.h"
+
 
 
 HockeyPlayer::HockeyPlayer(const std::string& playerName, int playerAge,
@@ -9,7 +10,7 @@ HockeyPlayer::HockeyPlayer(const std::string& playerName, int playerAge,
 }
 
 
-void HockeyPlayer::scoreGoal() {               // Игрок забивает гол
+void HockeyPlayer::scoreGoal() {               
     goalCount++;
     std::cout << name << " забил гол! Всего голов: " << goalCount << "\n";
 }
@@ -24,7 +25,7 @@ void HockeyPlayer::printInfo() const {
 }
 
 
-void HockeyPlayer::changePosition(const std::string& newPosition) {                 // Смена позиции
+void HockeyPlayer::changePosition(const std::string& newPosition) {                
     position = newPosition;
     std::cout << name << " теперь играет на позиции: " << position << "\n";
 }

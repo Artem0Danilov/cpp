@@ -5,10 +5,10 @@
 
 class HockeyPlayer {
 private:
-    std::string name;      // Имя игрока
-    int age;               // Возраст
-    std::string position;  // Позиция игрока
-    int goalCount;         // Количество забитых голов
+    std::string name;      
+    int age;               
+    std::string position;  
+    int goalCount;         
 
 public:
     
@@ -16,9 +16,9 @@ public:
         const std::string& playerPosition, int goals = 0);
 
     
-    void scoreGoal();                  // счетчик голов
-    void printInfo() const;            // инфа об игроке
-    void changePosition(const std::string& newPosition); // Меняет позицию
+    void scoreGoal();                  
+    void printInfo() const;            
+    void changePosition(const std::string& newPosition); 
 
    
     std::string getName() const;
