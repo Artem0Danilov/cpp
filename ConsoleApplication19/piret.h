@@ -13,7 +13,7 @@ public:
     int give_Money();
     int give_away_Money();
     void GetInfo();
-
+    int rip_Pirate(const string &name, int age);
 };
 
 #endif

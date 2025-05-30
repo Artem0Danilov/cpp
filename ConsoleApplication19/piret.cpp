@@ -30,7 +30,24 @@ Pirate::Pirate(const string& name, int age):
 
     }
 
+    int Pirate::rip_Pirate(const string &name, int age)
+    {
 
-    
+            if (age == 0) {
+            throw "Age can't be zero";
+        }
+        
+            if (age > 70){
+                cout << "Pirate rip from beer\n";
+                cout << "You must search place for body and tell about this parents pirate\n";
+                int sum_Rip;
+                cout << " Add sum what you want spend for funeral\n";
+                cin >> sum_Rip;
+                amoutofGold_ -= sum_Rip;
+        }
+            if (age <= 70){
+            cout << "You are a alive and can breathe deeply\n";
+        }
+         return amoutofGold_;
 
-    
+    }
